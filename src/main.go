@@ -6,8 +6,8 @@ import (
   "strings"
   "fmt"
 
-  "github.com/IKrehan/go_game/utils"
-  "github.com/IKrehan/go_game/utils/initializers"
+  "github.com/IKrehan/go_game/util"
+  "github.com/IKrehan/go_game/initializer"
   "github.com/go-gl/gl/v4.1-core/gl"
   "github.com/go-gl/glfw/v3.2/glfw"
 )

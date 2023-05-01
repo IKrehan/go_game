@@ -1,5 +1,9 @@
 package main
 
+import (
+  "github.com/IKrehan/go_game/util"
+)
+
 type Figure interface {
   getBufferSize()
   getFlattenedPoints()
@@ -15,14 +19,5 @@ func getBufferSize(fig Figure) {
 }
 
 func getFlattenedPoints(fig Figure) {
-}
-
-
-func flatten[T](slice [][]T) T {
-  flattened []T = []
-  for index, sub_array := range slice {
-    for index1, item := range sub_array {
-      append(flattened, item)
-    }
-  }
+  return util.Flatten(fig.vertices)
 }

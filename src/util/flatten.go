@@ -1,4 +1,4 @@
-package utils
+package util
 
 func Flatten[T](slice [][]T) T {
   flattened []T = []
