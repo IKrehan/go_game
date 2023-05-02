@@ -2,7 +2,7 @@ package initializer
 
 import "github.com/go-gl/glfw/v3.2/glfw"
 
-func Glfw(width uint32, height uint32, title str) *glfw.Window {
+func Glfw(width int, height int, title string) *glfw.Window {
   if err := glfw.Init(); err != nil {
     panic(err)
   }
